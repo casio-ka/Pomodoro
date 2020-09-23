@@ -3,9 +3,6 @@ from . import main
 from .forms import ReviewForm
 
 
-
-
-
 # Views
 @main.route('/')
 def index():
