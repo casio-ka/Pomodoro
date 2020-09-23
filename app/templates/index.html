@@ -1,0 +1,41 @@
+{% extends 'base.html'%}
+
+{% block styles%}
+    {{ super() }}
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+<!-- Content block -->
+{% block content %}
+
+
+
+    <div class="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+              <h1>POMODORO</h1>
+              <h2 class="lead text-muted">An Online Pomodoro Timer to Boost your productivity</h2>
+            </div>
+            <div class="container">
+                <h2 class=>What is Promofocus</h2>
+                <h2 class=>Pomofocus is a customizable pomodoro timer that works on desktop & mobile browser. The aim of this app is to help you focus on any task you are working on, such as study, writing, or coding. This app is inspired by <a href="https://francescocirillo.com/pages/pomodoro-technique" target="_blank" rel="noopener">Pomodoro Technique</a> which is a time management method developed by Francesco Cirillo.</h2>
+            </div>
+            <div class="container">
+                <h2 class=>What is Pomodoro Technique?</h2>
+                <h2 class=>The Pomodoro Technique is created by Francesco Cirillo for a more productive way to work and study. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student</h2>
+            </div>
+            <div class="container">
+                <h2 class=>How to use the Pomodoro Timer?</h2>
+                <ol class=>
+                    <li><strong>Add task</strong>to work on today</li>
+                    <li><strong>Set estimate pomodoros</strong>(1 = 1 hour of work) for each tasks</li>
+                    <li><strong>Select a task</strong>to work on</li>
+                    <li><strong>Start timer</strong>and focus on the task for 25 minutes</li>
+                    <li><strong>Take a break</strong>for 5 minutes when the alarm ring</li>
+                    <li><strong>Iterate</strong>3-5 until you finish the tasks</li>
+                </ol>
+            </div>
+          </section>
+    </div>
+
+
+{% endblock%}
